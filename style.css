@@ -1,0 +1,155 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.flex-container{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding-left:15px;
+	padding-right:15px;
+}
+/* header section start */
+@media (min-width:320px){
+	
+	.container{
+	width:85%;
+	margin:0 auto;
+	padding:30px 0;
+	/* overflow:hidden; */
+	}
+		.flex-item2{
+	width:50%;
+	padding-left:15px;
+	padding-right:15px;
+}
+	.flex-item9{
+	width:30%;
+	padding-left:15px;
+	padding-right:15px;
+}
+	.nav_bar_content{
+		display:none;
+	}
+	.icon{
+		display:flex;
+	}
+}
+@media (min-width:720px){
+		.container{
+	width:90%;
+	margin:0 auto;
+	padding:30px 0;
+	/* overflow:hidden; */
+}
+	.flex-item2{
+	width:50%;
+	padding-left:15px;
+	padding-right:15px;
+}
+	.flex-item9{
+	width:30%;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+	.nav_bar_content{
+		display:none;
+	}
+	.icon{
+		display:flex;
+	}
+}
+@media (min-width:1000px){
+		.container{
+	width:90%;
+	margin:0 auto;
+	padding:30px 0;
+	/* overflow:hidden; */
+}
+	.flex-item2{
+	width:15%;
+	padding-left:15px;
+	padding-right:15px;
+}
+	.flex-item9{
+	width:65%;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+	.nav_bar_content{
+		display:flex;
+	}
+	.icon{
+		display:none;
+	}
+}
+.header{
+	background-color:white;
+	box-shadow:2px 2px 2px 2px #e7ddddab;
+	position:sticky;
+	top:0;
+	width:100%;
+	z-index: 997;
+}
+.title h1{
+	font-size:1.9rem;
+	text-transform:capitalize;
+	position:relative;
+	margin-top: -3px;
+}
+.title h1::after{
+	content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #c40c0c;
+    position: absolute;
+    top:1.5rem;
+}
+.nav_bar_head{
+	display:flex;
+	justify-content:space-between;
+}
+.nav_bar_head li{
+	margin-top:0.31rem;
+}
+.nav_bar_content{
+	list-style:none;
+}
+.nav_bar_content a{
+	text-decoration:none;
+	color:#8c8989;
+	text-transform:capitalize;
+	font-size:1.18rem;
+	position:relative;
+}
+.nav_bar_content a:hover{
+	color:black;
+}
+.nav_bar_content a::after{
+	content:"";
+	background-color:#ce1212;
+	width:0%;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    bottom: -9px;	
+	transition:all 0.3s linear;
+}
+.nav_bar_content a:hover::after{
+	width:100%;
+	
+}
+.nav_bar_content a i{
+	font-size:0.81rem;
+	margin-left:2px;
+}
+.icon i{
+	font-size:20px
+}
+
+
+/* header section end */
